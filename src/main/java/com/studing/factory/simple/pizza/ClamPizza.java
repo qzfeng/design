@@ -5,7 +5,7 @@ package com.studing.factory.simple.pizza;
  */
 public class ClamPizza extends Pizza {
     public ClamPizza() {
-        name = "NY Style Clam Pizza";
+        name = "Clam Pizza";
         dough = "Thin Crust Dough";
         sauce = "Marinara Sauce";
         toppings.add("Clam Cheese");

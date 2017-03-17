@@ -5,9 +5,14 @@ package com.studing.factory.simple.pizza;
  */
 public class VeggiePizza extends Pizza {
     public VeggiePizza() {
-        name = "NY Style Veggie Pizza";
+        name = "Veggie Pizza";
         dough = "Thin Crust Dough";
         sauce = "Marinara Sauce";
         toppings.add("Veggie Cheese");
+    }
+
+    @Override
+    public void bake() {
+        System.out.println("Bake for 20 minutes at 450");
     }
 }

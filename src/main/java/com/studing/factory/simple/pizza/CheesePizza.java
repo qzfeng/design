@@ -5,9 +5,14 @@ package com.studing.factory.simple.pizza;
  */
 public class CheesePizza extends Pizza {
     public CheesePizza() {
-        name = "NY Style Cheese Pizza";
+        name = "Cheese Pizza";
         dough = "Thin Crust Dough";
         sauce = "Marinara Sauce";
         toppings.add("Cheese");
+    }
+
+    @Override
+    public void cut() {
+        System.out.println("Cutting the pizza into four slices");
     }
 }
