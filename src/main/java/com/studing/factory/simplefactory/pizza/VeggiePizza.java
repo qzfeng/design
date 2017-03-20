@@ -1,4 +1,6 @@
-package com.studing.factory.simple.pizza;
+package com.studing.factory.simplefactory.pizza;
+
+import java.util.Arrays;
 
 /**
  * Created by fengqz on 2017-3-16.
@@ -8,7 +10,8 @@ public class VeggiePizza extends Pizza {
         name = "Veggie Pizza";
         dough = "Thin Crust Dough";
         sauce = "Marinara Sauce";
-        toppings.add("Veggie Cheese");
+        toppings.addAll(Arrays.asList("Veggie", "Cheese"));
+
     }
 
     @Override

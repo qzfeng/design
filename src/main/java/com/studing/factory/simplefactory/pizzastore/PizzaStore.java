@@ -1,6 +1,6 @@
-package com.studing.factory.simple.pizzastore;
+package com.studing.factory.simplefactory.pizzastore;
 
-import com.studing.factory.simple.pizza.Pizza;
+import com.studing.factory.simplefactory.pizza.Pizza;
 
 /**
  * Created by fengqz on 2017-3-16.

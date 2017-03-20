@@ -1,4 +1,7 @@
-package com.studing.factory.method.pizza;
+package com.studing.factory.methodfactory.pizza;
+
+import com.studing.factory.methodfactory.ingredient.Dough;
+import com.studing.factory.methodfactory.ingredient.Sauce;
 
 import java.util.ArrayList;
 
@@ -7,20 +10,11 @@ import java.util.ArrayList;
  */
 public abstract class Pizza {
     String name;
-    String dough; // 面团
-    String sauce; // 酱
+    Dough dough; // 面团
+    Sauce sauce; // 酱
     ArrayList toppings = new ArrayList();
 
     public abstract void prepare();
-//    public abstract void prepare() {
-//        System.out.println("Preparing " + name);
-//        System.out.println("Tossing dough ...");
-//        System.out.println("Adding sauce ...");
-//        System.out.println("Adding topping:");
-//        for (int i = 0; i < toppings.size(); i++) {
-//            System.out.println("   " + toppings.get(i));
-//        }
-//    }
 
     public void bake() {
         System.out.println("Bake for 25 minutes at 350");

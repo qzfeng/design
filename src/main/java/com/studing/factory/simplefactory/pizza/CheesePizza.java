@@ -1,4 +1,4 @@
-package com.studing.factory.simple.pizza;
+package com.studing.factory.simplefactory.pizza;
 
 /**
  * Created by fengqz on 2017-3-16.

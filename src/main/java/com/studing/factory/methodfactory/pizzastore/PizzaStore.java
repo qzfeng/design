@@ -1,15 +1,11 @@
-package com.studing.factory.method.pizzastore;
+package com.studing.factory.methodfactory.pizzastore;
 
-import com.studing.factory.method.pizza.Pizza;
+import com.studing.factory.methodfactory.pizza.Pizza;
 
 /**
  * Created by fengqz on 2017-3-16.
  */
 public abstract class PizzaStore {
-//    SimplePizzaFactory simplePizzaFactory;
-//    public PizzaStore(SimplePizzaFactory simplePizzaFactory) {
-//        this.simplePizzaFactory = simplePizzaFactory;
-//    }
 
     public Pizza orderPizza(String type) {
         Pizza pizza = createPizza(type);
