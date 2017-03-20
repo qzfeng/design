@@ -1,4 +1,4 @@
-package com.studing.factory.singleton;
+package com.studing.singleton;
 
 /**
  * 类加载时创建实例，多线程安全

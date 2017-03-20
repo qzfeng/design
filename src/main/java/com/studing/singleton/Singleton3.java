@@ -1,4 +1,4 @@
-package com.studing.factory.singleton;
+package com.studing.singleton;
 
 /**
  * 防止多线程时实例化多个实例，方法加同步锁，多线程安全，性能低，不推荐

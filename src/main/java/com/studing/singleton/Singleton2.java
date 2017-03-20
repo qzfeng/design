@@ -1,4 +1,4 @@
-package com.studing.factory.singleton;
+package com.studing.singleton;
 
 /**
  * 懒加载也叫延迟加载，第一次用到时创建实例，多线程不安全，不推荐

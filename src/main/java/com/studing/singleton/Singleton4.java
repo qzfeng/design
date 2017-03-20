@@ -1,4 +1,4 @@
-package com.studing.factory.singleton;
+package com.studing.singleton;
 
 /**
  * 双重空判断，代码块加同步锁，多线程安全，不影响性能，推荐
