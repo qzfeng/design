@@ -1,6 +1,6 @@
 package com.studing.iterator;
 
-import com.studing.factory.methodfactory.Menu;
+import java.util.Iterator;
 
 /**
  * Created by fengqz on 2017-3-22.
@@ -25,5 +25,17 @@ public class DinerMenuIterator implements Iterator {
         MenuItem menuItem = menuItems[position];
         position++;
         return menuItem;
+    }
+
+    public void remove() {
+        if (position <= 0) {
+            throw new IllegalStateException("You can't remove an item until you have done at least next()");
+        }
+        if (menuItems[position - 1] != null) {
+            for (int i = position - 1; i < menuItems.length - 1; i++) {
+                menuItems[i] = menuItems[i + 1];
+            }
+            menuItems[menuItems.length - 1] = null;
+        }
     }
 }

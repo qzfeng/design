@@ -2,6 +2,7 @@ package com.studing.iterator;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by fengqz on 2017-3-22.
@@ -25,6 +26,10 @@ public class PancakeHouseMenuIterator implements Iterator {
         MenuItem menuItem = menuItems.get(position);
         position++;
         return menuItem;
+    }
+
+    public void remove() {
+        menuItems.remove(position);
     }
 
 }
