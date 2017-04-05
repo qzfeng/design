@@ -2,6 +2,8 @@ package com.studing;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +22,13 @@ public class App
         System.out.println(InetAddress.getLocalHost().getHostAddress());
         System.out.println(Math.abs("192.168.10.29".hashCode()));
         System.out.println(Math.abs("192.168.10.30".hashCode()));
+        System.out.println("--------------------------");
+
+        if (true)System.out.print("a");if (false) {
+            System.out.println("a");
+        } else {
+            System.out.println("b");
+        }
     }
 
     private void path() throws IOException {
